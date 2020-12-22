@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="797.0" prefWidth="1336.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="databas.FXMLDocumentController">
+   <children>
+      <TextField fx:id="name" layoutX="205.0" layoutY="69.0" />
+      <TextField fx:id="source" layoutX="205.0" layoutY="118.0" />
+      <TextField fx:id="dest" layoutX="204.0" layoutY="165.0" />
+      <TextField fx:id="age" layoutX="204.0" layoutY="218.0" />
+      <TextField fx:id="gender" layoutX="202.0" layoutY="276.0" />
+      <TextField fx:id="uid" layoutX="202.0" layoutY="328.0" />
+      <TextField fx:id="date" layoutX="205.0" layoutY="386.0" />
+      <TextField fx:id="mobile" layoutX="204.0" layoutY="443.0" />
+      <TableView fx:id="tableView" layoutX="416.0" layoutY="88.0" prefHeight="557.0" prefWidth="895.0" />
+      <Label layoutX="51.0" layoutY="78.0" text="NAME">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="127.0" text="SOURCE">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="175.0" text="DESTINATION">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="214.0" text="AGE">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="267.0" text="Gender">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="52.0" layoutY="434.0" text="MOBILE NO.">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="add" layoutX="113.0" layoutY="491.0" mnemonicParsing="false" onAction="#addb" prefHeight="37.0" prefWidth="109.0" text="Book Ticket" />
+      <Button fx:id="search" layoutX="91.0" layoutY="707.0" mnemonicParsing="false" onAction="#searchb" prefHeight="37.0" prefWidth="133.0" text="Ticket Details" />
+      <Label layoutX="482.0" layoutY="38.0" prefHeight="27.0" prefWidth="270.0" text="TICKETS">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="display" layoutX="834.0" layoutY="657.0" mnemonicParsing="false" onAction="#displayb" text="Refresh" />
+      <Button fx:id="delete" layoutX="228.0" layoutY="708.0" mnemonicParsing="false" onAction="#deleteb" text="Cancel Ticket" />
+      <Button fx:id="clear" layoutX="246.0" layoutY="491.0" mnemonicParsing="false" onAction="#clearb" text="CLEAR" />
+      <TextField fx:id="ticketid" layoutX="105.0" layoutY="657.0" />
+      <Label layoutX="156.0" layoutY="616.0" text="Ticket ID">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="335.0" text="UID">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="386.0" prefHeight="25.0" prefWidth="133.0" text="Date" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="458.0" prefHeight="25.0" prefWidth="152.0" text="(seperated by comma( ,))" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="411.0" text="(YYYY-MM-DD)">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="142.0" layoutY="26.0" prefHeight="25.0" prefWidth="152.0" text="Book Tickets">
+         <font>
+            <Font name="Sitka Heading Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="570.0" text="Ticket Details &amp; Cancellation">
+         <font>
+            <Font name="Sitka Heading Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
